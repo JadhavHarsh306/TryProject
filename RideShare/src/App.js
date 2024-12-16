@@ -26,6 +26,7 @@ import QuoteSection from './components/HomePage/QuoteSection';
 
 import Search from './components/HomePage/Search';
 import PaymentComponent from './components/Payments/PaymentComponent';
+import Refer from './components/User/Refer';
 
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
                     <Route path="/book-now" element={<PaymentComponent />} /> {/* Add the Book Now route */}
                 </Routes>
                 <Page1 />
+                <Refer/>
                 <OffersSection/>
                 <QuoteSection />
                 <Footer />

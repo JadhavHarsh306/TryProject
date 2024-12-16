@@ -1,4 +1,3 @@
-// src/components/OffersSection.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,6 +9,8 @@ const OffersSection = () => {
             navigate('/signup'); // Redirect to the signup page for these buttons
         } else if (offer.buttonText === "Book Now") {
             navigate('/search'); // Redirect to the Search page for the "Book Now" button
+        } else if (offer.buttonText === "Refer Now") {
+            navigate('/refer'); // Redirect to the ReferAndEarn page
         }
         // You can add more conditions for other buttons if needed
     };
